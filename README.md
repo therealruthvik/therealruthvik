@@ -3,7 +3,7 @@
 
 # Hey there! 👋 I'm Ruthvik Garlapati, Your DevOps Ally! 🚀
 
-> ## ![](https://komarev.com/ghpvc/?username=ruthvikgneu)
+> ## ![](https://komarev.com/ghpvc/?username=ruthvikgneu&color=orange)
 
 > # 🧑‍💻 About Me
 I'm all about breaking down barriers between development and operations to create smooth, efficient, and rock-solid systems. With a background in DevOps and Site Relibility Engineering, I thrive in fast-paced environments where collaboration and innovation reign supreme.
