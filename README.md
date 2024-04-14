@@ -1,7 +1,7 @@
-# Hi there! 👋 I'm [Ruthvik], Your DevOps Ally!
+# Hi there! 👋 I'm Ruthvik Garlapati, Your DevOps Ally!
 
 ## About Me
-I'm passionate about bridging the gap between development and operations to build robust, scalable, and efficient systems. With a background in [Your Background], I thrive in dynamic environments where collaboration and innovation are key.
+I'm passionate about bridging the gap between development and operations to build robust, scalable, and efficient systems. With a background in DevOps and Site Reliability Engineering, I thrive in dynamic environments where collaboration and innovation are key.
 
 ## What I Do
 - **Automation Aficionado:** I believe in automating everything possible, from CI/CD pipelines to infrastructure provisioning, to free up time for more meaningful work.
