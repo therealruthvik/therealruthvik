@@ -16,7 +16,7 @@ I'm all about breaking down barriers between development and operations to creat
 - **Cloud Whisperer:** AWS, Azure, GCP - you name it! I'm well-versed in leveraging cloud services to optimize performance, cost, and scalability.
 - **Monitoring Maestro:** I ensure systems are always humming along smoothly by setting up comprehensive monitoring and alerting systems.
 - **Security Sentinel:** Security isn't an afterthought; it's woven into every aspect of my work. I'm vigilant about implementing best practices to keep our systems and data safe.
-- 
+  
 > # 📰 Certifications:
 - **Certified Kubernetes Administrator:** [Credential](https://www.credly.com/badges/8067d292-b8aa-4a86-ad16-5ae29a99553d)
 - **Hashicorp Certified Terraform Associate:** [Credential](https://www.credly.com/badges/fcbb30be-aed9-4bb8-9b42-15f1db4c0da1/linked_in_profile)
