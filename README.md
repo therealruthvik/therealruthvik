@@ -1,22 +1,4 @@
-<center>
-  ![DevOps Pipeline](https://media.giphy.com/media/Y1S9ZyIQmAdiZPG8sR/giphy.gif)
-</center>
 
-<center>
-  ![CI/CD](https://media.giphy.com/media/3ohhwKxxRObJG7O2BO/giphy.gif)
-</center>
-
-<center>
-  ![Docker](https://media.giphy.com/media/xUPGGDNsLvqsBOhuU0/giphy.gif)
-</center>
-
-<center>
-  ![Kubernetes](https://media.giphy.com/media/3oKIPE78bGIobSNnkA/giphy.gif)
-</center>
-
-<center>
-  ![IaC](https://media.giphy.com/media/3o6ZsVvjwH4q9JCwwI/giphy.gif)
-</center>
 
 
 # Hey there! 👋 I'm Ruthvik Garlapati, Your DevOps Ally! 🚀
