@@ -95,7 +95,7 @@ Currently, I am a Software Engineer (external consultant) at **Nestle**, shippin
 - 🔧 **HashiCorp Certified: Terraform Associate** — [Verify Badge](https://www.credly.com/badges/fcbb30be-aed9-4bb8-9b42-15f1db4c0da1/linked_in_profile)
 - ☁️ **Microsoft Certified: Azure Fundamentals** — [Verify Badge](https://learn.microsoft.com/en-in/users/ruthvikgarlapati-8692/credentials/3831ce1f37da4222)
 - 🛠️ **ServiceNow Certified System Administrator**
-- 🎯 **NVIDIA Certified Associate: AI Infrastructure & Operations** — *In Progress*
+- 🎯 **NVIDIA Certified Associate: AI Infrastructure & Operations** — [Verify Badge](https://www.credly.com/badges/56edd9a6-3553-4748-abc1-b2cde77feeae/public_url)
 
 ### Education
 - **Northeastern University** — M.S. in Information Systems (GPA: 3.9) &nbsp;•&nbsp; *Boston, MA*
