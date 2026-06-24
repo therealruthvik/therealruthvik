@@ -1,83 +1,102 @@
-# Hi, I'm Ruthvik 👋
-
-I build and operate **AI/ML infrastructure on Kubernetes** — GPU clusters, LLM inference platforms, and the GitOps pipelines that ship them. Currently a Software Engineer at Nestle (external consultant) shipping ArgoCD-driven release pipelines on AKS. Previously DevOps Engineer Intern at SAP and Graduate TA for Cloud Computing at Northeastern.
-
-📍 Seattle, WA &nbsp;•&nbsp; 🎯 Site Reliability Engineering, with a focus on AI/ML workloads &nbsp;•&nbsp; ☸ CKA-certified
-
----
-
-## What I work on
-
-I treat operations as a software problem. Most of what I build sits at the intersection of three things: **distributed systems on Kubernetes**, **GPU/LLM serving stacks**, and **the observability + automation that keeps them up**.
-
-If you're curious what that looks like in practice, the projects below are the best window in.
+<div align="center">
+  <h1>Ruthvik Garlapati</h1>
+  <p><b>Software Engineer (AI/ML Infra & Kubernetes SRE)</b></p>
+  <p>📍 Seattle, WA &nbsp;•&nbsp; ☸️ CKA-Certified &nbsp;•&nbsp; ✉️ <a href="mailto:ruthvik.garla@gmail.com">ruthvik.garla@gmail.com</a></p>
+  <p>
+    <a href="https://www.linkedin.com/in/ruthvikg31/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+    <a href="https://github.com/therealruthvik"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+    <a href="https://leetcode.com/ruthvikg31/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+  </p>
+</div>
 
 ---
 
-## Featured projects
+### 💫 About Me
 
-### 🚀 [inference-platform](https://github.com/therealruthvik/inference-platform) — vLLM vs Triton, side by side
-Benchmarking platform that runs **vLLM** and **NVIDIA Triton Inference Server** on the same Lambda Labs A10 GPU VM, both serving TinyLlama-1.1B. **KEDA** autoscales each engine (1–5 replicas) based on Prometheus queue-depth metrics. Locust drives load. Compares throughput, latency, and autoscaling behavior between the two.
-> `k3s` `vLLM` `Triton` `KEDA` `Prometheus` `Grafana` `Locust`
+I build and operate **AI/ML infrastructure on Kubernetes** — GPU clusters, LLM inference platforms, and the GitOps pipelines that ship them. I treat infrastructure and operations as software engineering problems, focusing on **distributed systems durability**, **safety policies**, and **automated observability**.
 
-### ☁️ [gpu-k8s-lab](https://github.com/therealruthvik/gpu-k8s-lab) — Terraform-provisioned GPU clusters on AWS
-Two-phase GPU Kubernetes lab: **Phase 1** is bare GPU access on k3s on a single spot EC2 instance; **Phase 2** is managed EKS running **Llama-3.1-8B via vLLM** with full observability (NVIDIA GPU Operator, DCGM exporter, Prometheus, Grafana). Spot pricing keeps it ~$0.16–$0.29/hr.
-> `Terraform` `AWS` `EKS` `vLLM` `Llama-3.1-8B` `DCGM` `Prometheus`
-
-### 🔁 [mlops-llm-pipeline](https://github.com/therealruthvik/mlops-llm-pipeline) — End-to-end GitOps for LLM inference
-Production-style MLOps pipeline covering the full model lifecycle: **MLflow** experiment tracking with MinIO artifact storage, FastAPI/Docker inference server, Helm packaging, **ArgoCD** GitOps deploys, **NGINX Ingress canary** traffic splitting (10% → full rollout), and Prometheus + Grafana observability.
-> `MLflow` `ArgoCD` `Helm` `NGINX` `FastAPI` `Canary deploys`
-
-### 🖥️ [dgxclone](https://github.com/therealruthvik/dgxclone) — Self-hosted GPU job scheduler (RUN:ai-style)
-Submit Docker-based AI workloads to a GPU cluster, stream live logs via SSE, and watch GPU utilization in Grafana. Next.js frontend, FastAPI backend, Redis-backed RQ worker that creates Kubernetes Jobs for GPU pods. Packaged as a single Helm chart.
-> `k3s` `FastAPI` `Next.js` `Redis/RQ` `NVIDIA device plugin` `DCGM` `SSE` `Helm`
-
-### 📚 [sre-runbook-generator](https://github.com/therealruthvik/sre-runbook-generator) — RAG over postmortems
-LLM-powered runbook generator that turns Prometheus alerts into structured runbooks. Alertmanager → API Gateway → AWS Lambda. Uses **ChromaDB + sentence-transformers** for local retrieval over past postmortems (zero embedding API cost), and the Anthropic Claude API for generation. Optional ServiceNow ticket creation.
-> `Claude API` `ChromaDB` `RAG` `AWS Lambda` `Prometheus` `ServiceNow`
-
-### ☸ [k8s-ai-agent](https://github.com/therealruthvik/k8s-ai-agent) — Plain English → kubectl
-CLI agent that translates natural-language requests into kubectl commands and YAML manifests. Full CRUD for every major Kubernetes resource (Deployments, Services, Ingress, RBAC, CRDs). Per-step **confirm/refine loop**, prerequisite ordering, dry-run mode, and per-step risk scoring before execution.
-> `Claude API` `kubectl` `Python` `Interactive REPL`
-
-### 🧪 [neural-inference-server](https://github.com/therealruthvik/neural-inference-server) — Pure-Python inference over JSON/HTTP
-Bazel-managed two-layer dense network (ReLU → softmax) exposed over JSON/HTTP, with a **proto-defined service contract** that mirrors gRPC stub interfaces for drop-in replacement. Includes a typed client SDK and latency benchmark target. Companion C++ matrix-ops library (matmul/ReLU/softmax) is the planned CUDA acceleration path.
-> `Bazel` `Protocol Buffers` `Python` `C++ kernels`
+Currently, I am a Software Engineer (external consultant) at **Nestle**, shipping ArgoCD-driven release pipelines on AKS. Previously, I was a DevOps Engineer Intern at **SAP** and a Graduate TA for Cloud Computing at **Northeastern University**.
 
 ---
 
-## Stack I work with
+### 🛠️ Technical Stack
 
-**Distributed systems & cloud:** Kubernetes (CKA), AWS (EKS, EC2, Lambda), Azure (AKS, ACR), GCP, Terraform, Helm
-**AI/ML infra:** vLLM, Triton Inference Server, KEDA, NVIDIA DCGM, MLflow, GPU workload orchestration on k8s
-**Reliability & observability:** Prometheus, Grafana, OpenTelemetry, ELK, SumoLogic, ServiceNow, ArgoCD, Istio, Velero, Kyverno
-**Languages:** Python, Java, C/C++, Node.js (and a couple of Go and Rust repos here while I learn)
-**Linux & systems:** Linux administration, container runtime debugging, Bazel hermetic builds, NGINX, Docker
-
----
-
-## Certifications
-
-- ☸ **Certified Kubernetes Administrator (CKA)** — [credential](https://www.credly.com/badges/8067d292-b8aa-4a86-ad16-5ae29a99553d)
-- 🔧 **HashiCorp Terraform Associate** — [credential](https://www.credly.com/badges/fcbb30be-aed9-4bb8-9b42-15f1db4c0da1/linked_in_profile)
-- ☁️ **Microsoft Azure Fundamentals** — [credential](https://learn.microsoft.com/en-in/users/ruthvikgarlapati-8692/credentials/3831ce1f37da4222)
-- 🛠️ **ServiceNow Administrator**
-- 🎯 **NVIDIA Certified Associate — AI Infrastructure & Operations (NCA-AIIO)** — *in progress*
+| Category | Technologies |
+| :--- | :--- |
+| **Cloud & Orchestration** | Kubernetes (CKA), Go (`client-go`), Temporal, Terraform, Helm, Docker, AKS, EKS, GCP, Linux Systems |
+| **AI/ML & Serving Infra** | vLLM, NVIDIA Triton, NVIDIA GPU Operator, DCGM Exporter, Modal, NVIDIA NIM, MLflow, MinIO |
+| **SRE, GitOps & Security**| Prometheus, Grafana, OpenTelemetry, Kyverno, ArgoCD, Cosign, NGINX Ingress, ServiceNow |
+| **Languages** | Go, Python, JavaScript/TypeScript, Java, C/C++, Shell |
 
 ---
 
-## Education
+## 🚀 Featured Projects
 
-**Northeastern University** — M.S., Information Systems &nbsp;•&nbsp; GPA 3.9 &nbsp;•&nbsp; Boston, MA &nbsp;•&nbsp; May 2024
-*Coursework:* Advanced Cloud Computing, Network Structures & Cloud Computing, Data Structures and Algorithms
+### ⚙️ Durable Orchestration & Safety-Critical Pipelines
 
-**Jawaharlal Nehru Technological University** — B.Tech, Computer Science &nbsp;•&nbsp; Hyderabad, India
-*Coursework:* Database Management, Operating Systems, Software Engineering
+#### 🔗 [temporalops](https://github.com/therealruthvik/temporalops) — Self-Healing Canary Release Orchestrator
+*A progressive canary deployer and rollback manager running as a durable Temporal workflow.*
+- **Core Design:** Implements dry-run policy gating via Kyverno, replica scaling, bake stages, traffic splitting, and human approval gates.
+- **Fault Tolerance:** Uses a hand-written LIFO Saga compensation pattern for automatic rollbacks on telemetry failures or gate timeouts. Worker crashes mid-deploy resume from the last completed stage with no duplicate side effects.
+- **Stack:** `Go` • `Temporal SDK` • `Kubernetes API (client-go)` • `Kyverno` • `Prometheus` • `SQLite`
+
+#### 🛡️ [perception-sentinel](https://github.com/therealruthvik/perception-sentinel) — Fault-Tolerant AV Perception Pipeline
+*Real-time autonomous vehicle perception stream with LLM-augmented fallback mechanisms and production-grade SLO tracking.*
+- **Core Design:** YOLOv8n object detection running at 20 Hz on Modal GPUs, automatically failing over to Nemotron-550B (via NVIDIA NIM) with NeMo Guardrails upon watchdog alert.
+- **SRE Focus:** Features an in-path chaos proxy for fault injection, rolling p99 latency watchdog metrics, and full Prometheus/Grafana dashboarding for SLO compliance.
+- **Stack:** `Python` • `Modal (T4 GPU)` • `NVIDIA NIM` • `NeMo Guardrails` • `Prometheus` • `Docker`
+
+#### 🤖 [k8s-ai-agent](https://github.com/therealruthvik/k8s-ai-agent) — Natural Language to kubectl Interpreter
+*Interactive CLI agent translating plain English requests into dry-run validated Kubernetes YAML manifests.*
+- **Core Design:** Multi-step prompt builder with safety dry-runs, topological sort for resource creation (e.g. namespaces before deployments), and risk score checks using Claude.
+- **Stack:** `Python` • `Anthropic Claude API` • `kubectl` • `Docker`
 
 ---
 
-## Let's connect
+### ☸️ Kubernetes Governance, Security & GitOps
 
-📫 [ruthvik.garla@gmail.com](mailto:ruthvik.garla@gmail.com) &nbsp;•&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/ruthvikg31/) &nbsp;•&nbsp; 🧮 [LeetCode](https://leetcode.com/ruthvikg31/)
+#### 🛡️ [kyvernoproject](https://github.com/therealruthvik/kyvernoproject) — Cluster Security & Governance Policies
+*Production-grade Kubernetes admission control rules for cluster-wide enforcement of security and operational compliance.*
+- **Core Design:** Implements validation (blocking privileged containers, host namespaces, and unapproved registries), mutation (default resource injects), and Cosign signature verification.
+- **Validation:** Automated test-harness using `kyverno` CLI validating resource pass/fail metrics.
+- **Stack:** `Kyverno Policies (YAML)` • `Cosign` • `Helm` • `Shell`
 
-If you're building AI/ML infrastructure or hiring for an SRE role on a team that does — I'd love to talk.
+#### 🔄 [mlops-llm-pipeline](https://github.com/therealruthvik/mlops-llm-pipeline) — End-to-End GitOps for LLM Inference
+*Continuous delivery pipeline implementing automated canary releases and traffic splitting for FastAPI inference servers.*
+- **Core Design:** MLflow experiment tracking with MinIO backend, Helm-packaged app, ArgoCD deployment, and NGINX Ingress canary routing (10% to 100% rollout) triggered by performance metrics.
+- **Stack:** `ArgoCD` • `Helm` • `FastAPI` • `MLflow` • `MinIO` • `NGINX Ingress` • `Prometheus`
+
+---
+
+### 📊 Infrastructure Performance & Tooling
+
+#### 🔍 [riskdiff](https://github.com/therealruthvik/riskdiff) — Pre-Commit Git Diff Risk Scanner
+*A lightning-fast, zero-dependency, local pre-commit hook targeting AI-generated code pattern smells.*
+- **Core Design:** Scrapes staged git diffs to calculate risk scores based on heuristics (undocumented calls, swallowed exceptions, secret leakage, missing tests).
+- **User Experience:** Fully offline, outputs reports in JSON, SARIF, or Markdown, recommending specific code-level corrections.
+- **Stack:** `JavaScript` • `Node.js` • `Git CLI` (Zero npm dependencies)
+
+#### ⚡ [inference-platform](https://github.com/therealruthvik/inference-platform) — Triton vs vLLM Serving Benchmarks
+*Side-by-side performance benchmarking framework comparing LLM inference engines on Lambda Labs A10 GPUs.*
+- **Core Design:** Serves TinyLlama-1.1B through both vLLM and NVIDIA Triton, using KEDA to autoscale deployments based on Prometheus queue-depth telemetry under load from Locust.
+- **Stack:** `Kubernetes` • `vLLM` • `NVIDIA Triton` • `KEDA` • `Prometheus` • `Locust` • `Grafana`
+
+#### 🖥️ [dgxclone](https://github.com/therealruthvik/dgxclone) — Multi-Tenant GPU Workload Scheduler
+*Self-hosted job runner scheduling containerized ML workloads across a private GPU cluster (Run:AI style).*
+- **Core Design:** Next.js UI submitting tasks to a FastAPI backend, executing Kubernetes Jobs via Redis/RQ queue worker, with live Server-Sent Events (SSE) logs.
+- **Stack:** `Next.js` • `FastAPI` • `Redis / RQ` • `NVIDIA Device Plugin` • `DCGM Exporter`
+
+---
+
+## 📜 Certifications & Education
+
+### Certifications
+- ☸️ **Certified Kubernetes Administrator (CKA)** — [Verify Badge](https://www.credly.com/badges/8067d292-b8aa-4a86-ad16-5ae29a99553d)
+- 🔧 **HashiCorp Certified: Terraform Associate** — [Verify Badge](https://www.credly.com/badges/fcbb30be-aed9-4bb8-9b42-15f1db4c0da1/linked_in_profile)
+- ☁️ **Microsoft Certified: Azure Fundamentals** — [Verify Badge](https://learn.microsoft.com/en-in/users/ruthvikgarlapati-8692/credentials/3831ce1f37da4222)
+- 🛠️ **ServiceNow Certified System Administrator**
+- 🎯 **NVIDIA Certified Associate: AI Infrastructure & Operations** — *In Progress*
+
+### Education
+- **Northeastern University** — M.S. in Information Systems (GPA: 3.9) &nbsp;•&nbsp; *Boston, MA*
+- **Jawaharlal Nehru Technological University** — B.Tech in Computer Science &nbsp;•&nbsp; *Hyderabad, India*
