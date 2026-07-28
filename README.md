@@ -1,13 +1,72 @@
+<!-- ===== THEME-AWARE HERO BANNER ===== -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/therealruthvik/therealruthvik/main/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/therealruthvik/therealruthvik/main/light.svg">
+  <img alt="Ruthvik Garlapati" src="https://raw.githubusercontent.com/therealruthvik/therealruthvik/main/light.svg">
+</picture>
+
+<!-- ===== GITHUB STATS ===== -->
+
 <div align="center">
-  <h1>Ruthvik Garlapati</h1>
-  <p><strong>Software Engineer (AI/ML Infra & Kubernetes SRE)</strong></p>
-  <p>Seattle, WA | CKA-Certified Kubernetes Engineer | <a href="mailto:ruthvik.garla@gmail.com">ruthvik.garla@gmail.com</a></p>
-  <p>
-    <a href="https://www.linkedin.com/in/ruthvikg31/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-    <a href="https://github.com/therealruthvik"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
-    <a href="https://leetcode.com/ruthvikg31/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black" alt="LeetCode"></a>
-  </p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=therealruthvik&hide_border=true&background=0A101F&stroke=38BDF8&ring=A78BFA&fire=10B981&currStreakLabel=38BDF8&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=38BDF8&card_width=1180" />
+  <img width="100%" src="https://streak-stats.demolab.com/?user=therealruthvik&hide_border=true&background=FFFFFF&stroke=0284C7&ring=7C3AED&fire=059669&currStreakLabel=0284C7&sideLabels=475569&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=0284C7&card_width=1180" alt="Ruthvik's streak" />
+</picture>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=therealruthvik&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=38BDF8&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=therealruthvik&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=0284C7&icon_color=7C3AED&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Ruthvik's GitHub stats" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=therealruthvik&layout=compact&langs_count=8&hide_border=true&title_color=38BDF8&text_color=94A3B8&bg_color=0A101F&card_width=500" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=therealruthvik&layout=compact&langs_count=8&hide_border=true&title_color=0284C7&text_color=0F172A&bg_color=FFFFFF&card_width=500" alt="Top languages" />
+</picture>
+
 </div>
+
+<!-- ===== CONTRIBUTION SNAKE ===== -->
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/therealruthvik/therealruthvik/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/therealruthvik/therealruthvik/output/snake-light.svg" />
+  <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/therealruthvik/therealruthvik/output/snake-light.svg" />
+</picture>
+
+</div>
+
+<br/>
+<div align="center">
+<img width="100%" src="https://raw.githubusercontent.com/therealruthvik/therealruthvik/projects/projects.svg" alt="Projects" />
+</div>
+
+<!-- ===== SOCIAL BADGES ===== -->
+<br/>
+<div align="center">
+
+<a href="https://www.linkedin.com/in/ruthvikg31/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=38BDF8&labelColor=0A101F" alt="LinkedIn" />
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/therealruthvik">
+  <img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=white&labelColor=0A101F" alt="GitHub" />
+</a>
+&nbsp;&nbsp;
+<a href="https://leetcode.com/ruthvikg31/">
+  <img src="https://img.shields.io/badge/LeetCode-0A101F?style=for-the-badge&logo=leetcode&logoColor=10B981&labelColor=0A101F" alt="LeetCode" />
+</a>
+&nbsp;&nbsp;
+<a href="mailto:ruthvik.garla@gmail.com">
+  <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=A78BFA&labelColor=0A101F" alt="Email" />
+</a>
+
+</div>
+
+<!-- =================================== -->
 
 ---
 
