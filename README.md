@@ -1,8 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/therealruthvik/therealruthvik/main/dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/therealruthvik/therealruthvik/main/light.svg">
-  <img alt="Ruthvik Garlapati" src="https://raw.githubusercontent.com/therealruthvik/therealruthvik/main/light.svg">
-</picture>
+## Ruthvik Garlapati
 
 I build infrastructure for systems that have to keep running when something
 breaks — Kubernetes platforms, GPU inference serving, and the observability and
